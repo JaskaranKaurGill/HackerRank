@@ -10,3 +10,15 @@
     print(not s.islower())
     #This method checks if all the characters of a string are uppercase characters (A_Z)
     print(not s.isupper())
+    
+
+    #print True if  has any alphanumeric characters. Otherwise, print False
+    print(any(c.isalnum() for c in s))
+    #print True if  has any alphabetical characters. Otherwise, print False
+    print(any(c.isalpha() for c in s))
+    #print True if  has any digits. Otherwise, print False
+    print(any(c.isdigit() for c in s))
+    #print True if  has any lowercase characters. Otherwise, print False.
+    print(any(c.islower() for c in s))
+    #print True if  has any uppercase characters. Otherwise, print False.
+    print(any(c.isupper() for c in s))
