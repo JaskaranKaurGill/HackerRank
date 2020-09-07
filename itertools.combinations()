@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import combinations
+A = input().split(" ")
+List_Singles = sorted([char for char in A[0]])
+Combinations_list = []
+for i in range(int(A[1])):
+   Combinations_list += sorted(list(combinations(List_Singles,i+1)))
+for i in range(len(Combinations_list)):
+    Combinations_list[i] = ''.join(Combinations_list[i]) 
+print(*Combinations_list, sep="\n")
