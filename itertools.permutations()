@@ -1,0 +1,8 @@
+from itertools import permutations
+A = input()
+A = A.split(" ")
+List = list(permutations([char for char in A[0]],int(A[1])))
+for i in range(len(List)):
+    List[i] = ''.join(List[i]) 
+print(*sorted(List), sep="\n")
+
