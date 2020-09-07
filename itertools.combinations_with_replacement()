@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import combinations_with_replacement
+A = input().split(" ")
+List_Singles = sorted([char for char in A[0]])
+Combinations_list = list(combinations_with_replacement(List_Singles,int(A[1])))
+for i in range(len(Combinations_list)):
+    Combinations_list[i] = ''.join(Combinations_list[i]) 
+
+print(*sorted(Combinations_list), sep="\n")
