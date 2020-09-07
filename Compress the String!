@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import groupby
+
+R  = input()
+R = [char for char in R]
+# Key function 
+key_func = lambda x: x[0] 
+List = []
+for key, group in groupby(R, key=key_func):
+    temp = list(group)
+    List.append((len(temp), int(temp[0])))
+print(*List)
