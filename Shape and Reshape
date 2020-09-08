@@ -1,0 +1,8 @@
+import numpy as np
+
+N = input().split(" ")
+N = [int(x) for x in N]
+ar = np.array(N)
+ar = ar.reshape(3,3)
+print(ar)
+
