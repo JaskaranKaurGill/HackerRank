@@ -1,0 +1,10 @@
+import numpy as np
+n = input().split(" ")
+List = []
+for i in range(int(n[0])):
+        temp = input().split(" ")
+        List.append([int(x) for x in temp])
+ar = np.array(List)
+print(ar.transpose())
+print(ar.flatten())
+
