@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import Counter
+Number_of_shoes = int(input())
+myList = [int(x) for x in input().split(" ")]
+Dict = Counter(myList)
+Total = 0
+for i in range(int(input())):
+    Customer = [int(x) for x in input().split(" ")]
+    Shoe_size, Amount = Customer[0], Customer[1]
+    if(Dict[Shoe_size] != 0):
+        Total+=Amount
+        Dict[Shoe_size] = Dict[Shoe_size]-1
+print(Total)
+
+
+
