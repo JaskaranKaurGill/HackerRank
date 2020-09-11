@@ -1,0 +1,12 @@
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import deque
+d = deque()
+for i in range(int(input())):
+    function = input().split(" ")
+    if (len(function)==1):
+        eval('d.'+function[0]+'()')
+    else:
+        eval('d.'+function[0]+'('+function[1]+')')
+print(*d)
