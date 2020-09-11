@@ -1,0 +1,18 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import defaultdict
+d = defaultdict(list)
+List = []
+Groups = input().split(" ")
+GroupA_length = int(Groups[0])
+GroupB_length = int(Groups[1])
+for i in range(GroupA_length):
+    d[str(input())].append(i+1)
+for i in range(GroupB_length):
+    Letter = input()
+    if(d[Letter]):
+        print(*d[Letter])
+    else:
+        print(-1)
+
+
+    
